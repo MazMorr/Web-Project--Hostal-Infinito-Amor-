@@ -1,0 +1,344 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Font Families */
+.grey-qo-regular {
+    font-family: "Grey Qo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Body Styles */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #e2daf5;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    min-height: 0px;
+    background: linear-gradient(to right, rgb(248, 216, 216), brown);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+.nav-home a {
+    text-shadow: 2px 2px 0px black, 4px 4px 10px red;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition-duration: 500ms;
+    padding: 3px;
+}
+
+.nav-home a:hover {
+    color: gold;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border-radius: 20%;
+    padding: 6px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+/* Banner Styles */
+.banner {
+    top: 0;
+    position: relative;
+    right: 0;
+    left: 0;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+.banner-content h1 {
+    text-shadow: 3px 3px 0px black, 5px 5px 10px red;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 100px;
+}
+
+.banner-content p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px black, 4px 4px 10px red;
+}
+
+.banner-img {
+    position: relative;
+    border-radius: 30%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* Button Styles */
+.button {
+    width: 190px;
+    height: 33px;
+    border: 5px solid #ec2a3a;
+    background-color: #e2daf5;
+    padding: 25px;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 4px 4px 10px red;
+    border-radius: 10%;
+    transition-duration: 1000ms;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    padding: 30px;
+    font-size: large;
+}
+
+/* Intro Section Styles */
+.intro {
+    width: 100%;
+    background: linear-gradient(to right, #FF512F, #DD2476);
+    color: #333333;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 5px red;
+}
+
+.intro .text-title {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.intro .text-description {
+    background-color: #e2daf5;
+    font-size: 20px;
+    padding: 30px;
+}
+
+/* Gallery Styles */
+.gallery {
+    width: 100%;
+    background: #e2daf5;
+    column-count: 3;
+    column-fill: balance;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery .gallery-img {
+    display: inline-block;
+    padding: 0;
+    transition: transform 1000ms;
+    width: 70%;
+}
+
+.gallery .gallery-img img {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.gallery-img-description {
+    color: #333333;
+    font-size: larger;
+    text-shadow: 1px 1px #DD2476;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* Owner Section Styles */
+.owner article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.owner-content,
+.owner-img {
+    width: 45%;
+    float: inline-start;
+}
+
+.owner-img {
+    filter: drop-shadow(4px 6px 12px #333333);
+}
+
+.owner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.owner-content h2,
+.owner-content p {
+    padding: 2px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: #333333;
+    font-size: larger;
+    text-shadow: 4px 4px 6px red;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    background-color: brown;
+    color: antiquewhite;
+    text-shadow: 2px 2px 0px black;
+}
+
+#footer-title {
+    background-color: brown;
+}
+
+#logo-facebook,
+#logo-linkedin {
+    width: 100%;
+    text-shadow: 2px 2px 20px black;
+}
+
+/* Content Page Styles */
+#content-page {
+    width: 100%;
+    height: 550px;
+}
+
+.body-content {
+    background: linear-gradient(to right, #FF512F, #DD2476);
+    width: 100%;
+}
+
+.text-title {
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #FF512F, #DD2476);
+    text-shadow: 3px 3px 1px black, 5px 5px 6px red;
+}
+
+/* Form Section Styles */
+.form-container .form-title,
+.form-container > p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: brown;
+}
+
+.form-container .form-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    color: #ff4b4b;
+    text-shadow: 2px 2px 0px black, 4px 4px 10px red;
+}
+
+.form-container > p {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.form-section .form-container form {
+    width: 100%;
+    float: left;
+    background-color: brown;
+}
+
+.contact-info {
+    width: 100%;
+    float: left;
+    background-color: brown;
+}
+
+.phone-section,
+.address-section,
+.hours-section {
+    width: 26%;
+    margin: 5px;
+    float: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    padding: 10px;
+}
+
+/* Owner Image Styles */
+#owner-text-id {
+    position: relative;
+    top: 100px;
+    left: 5px;
+}
+
+.owner-img-id {
+    position: absolute;
+}
+
+#owner-img-id {
+    width: 100%;
+}
